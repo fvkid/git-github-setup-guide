@@ -39,14 +39,22 @@ git remote -v
 git branch -M main
 ```
 
-## 5️⃣ Push to GitHub
+## 5️⃣ Set upstream branch
 ```bash
 git push -u origin main
-```
+```       
 
 After this, future pushes only require:
 ```bash
 git push
+```
+
+If you ever see the message:<br>
+**`fatal: The upstream branch of your current branch does not match`**
+
+Run this to link the local branch to the correct remote:
+```bash
+git branch --set-upstream-to=origin/main main
 ```
 
 ## ⚠️ Notes

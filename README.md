@@ -25,7 +25,7 @@ git add .
 git commit -m "Upd!"
 ```
 
-3️⃣ Connect to GitHub remote
+## 3️⃣ Connect to GitHub remote
 ```bash
 git remote add origin https://github.com/<github_username>/<repository_name>.git
 ```
@@ -34,12 +34,12 @@ Check connection:
 git remote -v
 ```
 
-4️⃣ Rename local branch to main (GitHub default)
+## 4️⃣ Rename local branch to main (GitHub default)
 ```bash
 git branch -M main
 ```
 
-5️⃣ Push to GitHub
+## 5️⃣ Push to GitHub
 ```bash
 git push -u origin main
 ```
@@ -49,7 +49,7 @@ After this, future pushes only require:
 git push
 ```
 
-# ⚠️ Notes
+## ⚠️ Notes
 - The old master branch usually does not exist → no need to delete
 - On Windows, you might see credential-manager-core warning → safe to ignore
 - Empty folders must have .gitkeep for Git to track

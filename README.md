@@ -1,4 +1,7 @@
 # Git & GitHub Setup Guide
+---
+
+<br>
 
 ## 1️⃣ Create a repository on GitHub
 - Go to **GitHub → New repository**
@@ -6,8 +9,6 @@
 - **Do NOT** check README / .gitignore / License
 - Copy the **repository URL**  
   Example: `https://github.com/<github_username>/<repository_name>.git`
-
----
 
 ## 2️⃣ Prepare your local folder
 ```bash
@@ -17,7 +18,7 @@ git add .                 # Add all files
 git commit -m "Initial commit"
 ```
 
-> ⚠️ If the folder is empty → create a .gitkeep file
+⚠️ If the folder is empty → create a .gitkeep file
 
 ```bash
 touch <folder_name>/.gitkeep
@@ -42,33 +43,35 @@ git branch -M main
 ## 5️⃣ Set upstream branch
 ```bash
 git push -u origin main
-```       
-
-After this, future pushes only require:
+```
 ```bash
 git push
 ```
 
 ## 6️⃣ Embed credentials into remote URL (for auto-auth)
-
-Clone the repository
 ```bash
-git clone https://github.com/USERNAME/repository_name.git
+git clone https://github.com/<github_username>/<repository_name>.git
+```
+Open `.git/config` and update the remote URL:
+<br>
+```bash
+url = https://USERNAME:<token>@github.com/<github_username>/<repository_name>.git
 ```
 
-Open `.git/config` and update the remote URL:
-`url = https://USERNAME:TOKEN@github.com/USERNAME/repo.git`
-This allows git pull / git push without being prompted
-for username and password every time.
+<br>
 
-
-If you ever see the message:<br>
+##
+If you ever see the message:
+<br>
 **`fatal: The upstream branch of your current branch does not match`**
 
 Run this to link the local branch to the correct remote:
 ```bash
 git branch --set-upstream-to=origin/main main
 ```
+##
+
+<br>
 
 ## ⚠️ Notes
 - The old master branch usually does not exist → no need to delete

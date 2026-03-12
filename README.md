@@ -1,4 +1,4 @@
-# GitHub Setup – Local to New Repository
+# Git & GitHub Setup Guide
 
 ## 1️⃣ Create a repository on GitHub
 - Go to **GitHub → New repository**
@@ -48,6 +48,19 @@ After this, future pushes only require:
 ```bash
 git push
 ```
+
+## 6️⃣ Embed credentials into remote URL (for auto-auth)
+
+Clone the repository
+```bash
+git clone https://github.com/USERNAME/repository_name.git
+```
+
+Open `.git/config` and update the remote URL:
+`url = https://USERNAME:TOKEN@github.com/USERNAME/repo.git`
+This allows git pull / git push without being prompted
+for username and password every time.
+
 
 If you ever see the message:<br>
 **`fatal: The upstream branch of your current branch does not match`**

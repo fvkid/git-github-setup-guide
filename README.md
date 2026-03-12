@@ -76,4 +76,4 @@ git branch --set-upstream-to=origin/main main
 ## ⚠️ Notes
 - The old master branch usually does not exist → no need to delete
 - On Windows, you might see credential-manager-core warning → safe to ignore
-- Empty folders must have .gitkeep for Git to track
+- Git ignores empty folders → add `.gitkeep` to track the folder

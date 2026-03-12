@@ -5,7 +5,7 @@
 
 ## 1️⃣ Create a repository on GitHub
 - Go to **GitHub → New repository**
-- Enter the repository name **same as your folder** (e.g., `new_repository`)
+- Enter the repository name **same as your folder** (e.g., `my_repository`)
 - **Do NOT** check README / .gitignore / License
 - Copy the **repository URL**  
   Example: `https://github.com/<github_username>/<repository_name>.git`

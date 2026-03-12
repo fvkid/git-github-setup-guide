@@ -55,7 +55,7 @@ git clone https://github.com/<github_username>/<repository_name>.git
 Open `.git/config` and update the remote URL:
 <br>
 ```bash
-url = https://USERNAME:<token>@github.com/<github_username>/<repository_name>.git
+url = https://<github_username>:<token>@github.com/<github_username>/<repository_name>.git
 ```
 
 <br>
